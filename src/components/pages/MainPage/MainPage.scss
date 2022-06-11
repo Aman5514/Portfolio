@@ -1,0 +1,125 @@
+.MainPage_container {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex: 1;
+    padding: 0 5%;
+    font-family: 'Signika', sans-serif;
+
+    .left_side_container {
+        flex: 0.5;
+        padding-top: 80px;
+
+        h1 {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 55px;
+            color: #111111;
+        }
+
+        h2 {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 35px;
+            color: #111111;
+
+            span {
+                font-size: 22px;
+                height: 100%;
+                border: 1px solid gainsboro;
+                padding: 6px 16px;
+                background: #5562ff;
+                border-radius: 25px;
+                color: white;
+            }
+        }
+
+        p {
+            font-weight: 500;
+            font-family: system-ui;
+            font-size: 14px;
+            letter-spacing: 1px;
+            margin-top: 5px;
+        }
+
+        .button_container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 25px;
+
+            .color_button,
+            .plain_button {
+                font-family: 'Signika', sans-serif;
+                padding: 12px 24px;
+                background-color: rgb(233, 110, 15);
+                color: white;
+                border: none;
+            }
+
+            .plain_button {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                background-color: white;
+                color: black;
+                border: 1px solid gray;
+
+                .project_icon {
+                    font-size: 20px;
+                    animation: icon 3s linear infinite;
+
+                    @keyframes icon {
+                        0% {
+                            transform: rotate(0deg);
+                        }
+
+                        100% {
+                            transform: rotate(360deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .right_side_container {
+        flex: 0.5;
+        resize:both;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // padding-top: 40px;
+        .image_container {
+            height: 350px;
+            width: 350px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 35px rgba(256, 256, 256),
+                0px 0px 65px rgba(233, 110, 15, 0.3),
+                0px 0px 105px rgba(233, 110, 15, 0.5);
+            margin: auto;
+
+            img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.icon_rotate_animation {
+    animation: icon 3s linear infinite;
+
+    @keyframes icon {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
