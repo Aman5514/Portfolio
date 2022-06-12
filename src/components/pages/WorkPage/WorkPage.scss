@@ -1,0 +1,17 @@
+.workPage_container {
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Signika', sans-serif;
+    padding-top: 35px;
+
+    h2 {
+        font-size: 30px;
+        color: #111111;
+        text-transform: uppercase;
+        font-family: system-ui;
+        letter-spacing: 1px;
+        font-weight: 100;
+    }
+}

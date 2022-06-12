@@ -7,11 +7,11 @@ import profile from "../../assets/image/profile.jpg";
 import Tooltips from "../../common/ReusableComponent/Tooltips/Tooltips";
 const MainPage = () => {
   return (
-    <div className="MainPage_container">
+    <div className="MainPage_container" id="Home">
       <div className="left_side_container">
         <h1>Hi! I'm Aman Gupta</h1>
         <h2>
-          Developer <span>UX/UI</span>
+          <span>UX/UI</span> Developer
         </h2>
         <br />
         <p>Designing user interfaces over 2 years</p>
@@ -24,45 +24,43 @@ const MainPage = () => {
         </div>
       </div>
       <div className="right_side_container">
-        <Tooltips
-          icon={
-            <FaReact
-              className="icon_rotate_animation"
-              size={28}
-              color="dodgerblue"
-            />
-          }
-          title={"React Developer"}
-          top={110}
-          right={-20}
-        />
-        <Tooltips
-          icon={
-            <FaNodeJs
-              // className="icon_rotate_animation"
-              size={28}
-              color="green"
-            />
-          }
-          title={"Nodejs Developer"}
-          top={220}
-          left={450}
-        />
         <div className="image_container">
-          <img src={profile} />
+          <Tooltips
+            icon={
+              <FaReact
+                className="icon_rotate_animation"
+                size={28}
+                color="dodgerblue"
+              />
+            }
+            title={"React Developer"}
+            top={100}
+            right={130}
+          />
+          <Tooltips
+            icon={
+              <FaNodeJs
+                size={28}
+                color="green"
+              />
+            }
+            title={"Nodejs Developer"}
+            top={210}
+            left={290}
+          />
+          <img src={profile} alt="profile" />
+          <Tooltips
+            icon={
+              <SiMongodb
+                size={28}
+                color="green"
+              />
+            }
+            title={"MongoDB Master"}
+            top={-50}
+            right={100}
+          />
         </div>
-        <Tooltips
-          icon={
-            <SiMongodb
-              // className="icon_rotate_animation"
-              size={28}
-              color="green"
-            />
-          }
-          title={"MongoDB Database"}
-          top={-50}
-          right={-50}
-        />
       </div>
     </div>
   );
