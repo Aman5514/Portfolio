@@ -56,7 +56,7 @@ const MainPage = () => {
                 color="green"
               />
             }
-            title={"MongoDB Master"}
+            title={"Love MongoDB"}
             top={-50}
             right={100}
           />

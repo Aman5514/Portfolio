@@ -1,10 +1,18 @@
 .workPage_container {
     height: calc(100vh - 80px);
+    // height: 680px;
     display: flex;
     font-family: 'Signika', sans-serif;
+    flex-direction: column;
     padding: 0px 5%;
     padding-top: 45px;
-
+    // background-color: rgb(85,98,254);
+    background-color: rgb(30, 39, 137);
+    color: white;
+    // margin-bottom: 30px;
+    
+    .inner_container{
+        display: flex;
     .skills_container {
         flex: 0.5;
         display: flex;
@@ -25,7 +33,9 @@
 
             b {
                 font-weight: 700;
-                color: rgb(92, 92, 92);
+                color: rgba(255, 255, 255, 0.9);
+                letter-spacing: 2px;
+                font-size: 18px;
             }
         }
     }
@@ -43,11 +53,36 @@
                 font-family: "system-ui", sans-serif;
                 font-size: 14px;
                 font-weight: 300;
-                margin-top: 20px;
+                padding-top: 25px;
                 line-height: 1.6;
                 letter-spacing: 1px;
-                padding-bottom: 15px;
+                padding-bottom: 25px;
+                border-bottom: 2px solid white;
+            }
+            p:first-child{
+                border-top: 2px solid white;
             }
         }
     }
+}
+.brand_icons_container{
+    height: 200px;
+    margin-top: 30px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    .brand_icons{
+        display: flex;
+        gap: 100px;
+        animation:scroll 100s linear infinite;
+        @keyframes scroll{
+            0%{
+                transform:translateX(0%);
+            }
+            100%{
+                transform:translateX(-65.5%);
+            }
+        }
+    }
+}
 }

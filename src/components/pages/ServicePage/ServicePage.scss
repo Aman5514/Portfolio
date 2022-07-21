@@ -1,0 +1,14 @@
+.Service_container{
+    display: flex;
+    height: calc(100vh - 80px);
+    justify-content: center;
+    // background-color: rgb(11, 15, 50);
+    background-color: rgb(30, 39, 137);
+    color: whitesmoke;
+    h1{
+        font-size: 45px;
+        color: whitesmoke;
+        margin: 20px 0px;
+        letter-spacing: 1px;
+    }
+}

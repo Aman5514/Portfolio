@@ -4,6 +4,8 @@
     flex: 1;
     padding: 0 5%;
     font-family: 'Signika', sans-serif;
+    // margin-bottom: 250px;
+    // background-color: rgb(30, 39, 137);
 
     .left_side_container {
         flex: 0.5;
@@ -57,6 +59,7 @@
                 background-color: rgb(233, 110, 15);
                 color: white;
                 border: none;
+                border-radius: 4px;
             }
 
             .plain_button {

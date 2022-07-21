@@ -4,7 +4,7 @@ import { GiBugleCall } from "react-icons/gi";
 import { Link } from "react-scroll";
 
 const Header = () => {
-  const menu = ["Home", "Works", "About", "Projects", "Sevices"];
+  const menu = ["Home", "Works", "Projects", "Sevices"];
   return (
     <div className="header_container">
       <div className="header_logo">Personal.</div>
@@ -27,7 +27,7 @@ const Header = () => {
       </div>
       <div className="header_Button">
         Contact us
-        <GiBugleCall size={20} color="white" />
+        <GiBugleCall size={20} color="black" />
       </div>
     </div>
   );

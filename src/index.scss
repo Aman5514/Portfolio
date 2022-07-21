@@ -9,6 +9,7 @@ body {
   // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   //   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   //   sans-serif;
+  font-family: 'Signika', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   // background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
@@ -24,8 +25,8 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(26, 88%, 49%) ;
-  border-radius: 50px;
+  background: rgba(0,0,0,0.7);
+  // border-radius: 50px;
 }
 
 code {
