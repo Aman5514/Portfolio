@@ -32,8 +32,8 @@ const ProjectPage = () => {
             </div>
             <div className="project_link">
               <img src={Moviflix} alt="" />
-              <b>Or</b>
-              <a href="https://disney-plus-movies.web.app" target="blank" >Moviflix Link <FaLink/> </a>
+              {/* <b>Or</b>
+              <a href="https://disney-plus-movies.web.app" target="blank" >Moviflix Link <FaLink/> </a> */}
             </div>
               <b>Scan qr for check in another device</b>
           </div>
