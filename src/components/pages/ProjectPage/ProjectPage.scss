@@ -101,3 +101,33 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .About_container{
+        padding: 25px;
+        .About_content{
+            .About_content_item{
+                flex-wrap: wrap;
+                width: 100%;
+                padding: 15px;
+                .About_content_image{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .About_content_item_text{
+                    gap: 20px;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+
+}
+
+
+@media (max-width: 450px) {
+
+}
