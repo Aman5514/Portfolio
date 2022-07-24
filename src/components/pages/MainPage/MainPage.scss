@@ -19,22 +19,14 @@
             color: #111111;
         }
 
-        h2 {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            font-size: 35px;
-            color: #111111;
+        div {
             margin-top: 15px;
-
-            span {
-                font-size: 22px;
-                height: 100%;
-                border: 1px solid gainsboro;
-                padding: 6px 16px;
-                background: #5562ff;
-                border-radius: 25px;
-                color: white;
+            p {
+                font-size: 30px;
+                color: gray;
+                font-family: 'Signika', sans-serif;
+                font-weight: 600;
+                text-transform: capitalize;
             }
         }
 
@@ -126,22 +118,25 @@
 }
 
 @media (max-width: 768px) {
-    .MainPage_container{
+    .MainPage_container {
         flex-direction: column-reverse;
         height: max-content;
         padding: 5%;
         gap: 20px;
-        .left_side_container{
-            padding-top:0px;
+
+        .left_side_container {
+            padding-top: 0px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        .right_side_container{
-            .image_container{
+
+        .right_side_container {
+            .image_container {
                 height: 350px;
                 width: 350px;
-                .tooltip_container{
+
+                .tooltip_container {
                     display: none;
                 }
             }
@@ -152,23 +147,32 @@
 // for mobile
 
 @media (max-width: 450px) {
-    .MainPage_container{
+    .MainPage_container {
         padding: 50px 0px;
-        .right_side_container{
-            .image_container{
+
+        .right_side_container {
+            .image_container {
                 height: 250px;
                 width: 250px;
             }
         }
-        .left_side_container{
+
+        .left_side_container {
             padding: 35px 0px;
-            h1{
-                font-size: 40px;
+            div{
+                p{
+                    font-size: 28px;
+                }
             }
-            h2{
+            h1 {
+                font-size: 35px;
+            }
+
+            h2 {
                 font-size: 25px;
             }
-            p{
+
+            p {
                 font-size: 12px;
             }
         }

@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProjectPage.scss";
 import projectOne from "../../assets/image/92_w6J.gif";
-import { FaReact , FaLink } from "react-icons/fa";
+import { FaReact, FaLink } from "react-icons/fa";
 import { SiRedux, SiFirebase } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import Moviflix from "../../assets/image/moviflixQR.png";
@@ -24,23 +24,29 @@ const ProjectPage = () => {
               plot summaries, trivia, ratings, and fan and critical reviews.
             </p>
             <div className="technology">
-              <b>Technology :</b>{" "}
-              <FaReact className="technology_icon" color="#49a3fb" />{" "}
-              <SiRedux className="technology_icon" color="#593d88" />{" "}
-              <SiFirebase className="technology_icon" color="#ffcb2b" />{" "}
-              <TbApi className="technology_icon" />
+              <b>Technology</b>{" "}
+              <div>
+                <FaReact className="technology_icon" color="#49a3fb" />{" "}
+                <SiRedux className="technology_icon" color="#593d88" />{" "}
+                <SiFirebase className="technology_icon" color="#ffcb2b" />{" "}
+                <TbApi className="technology_icon" />
+              </div>
             </div>
             <div className="project_link">
               <img src={Moviflix} alt="" />
               {/* <b>Or</b>
               <a href="https://disney-plus-movies.web.app" target="blank" >Moviflix Link <FaLink/> </a> */}
             </div>
-              <b>Scan qr for check in another device</b>
+            <p>Scan QR for check in another device</p>
           </div>
         </div>
         <div className="About_content_item">
           <div className="About_content_image">
-            <img src="https://images.unsplash.com/photo-1560707303-4e980ce876ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80" alt="" srcset="" />
+            <img
+              src="https://images.unsplash.com/photo-1560707303-4e980ce876ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
+              alt=""
+              srcset=""
+            />
           </div>
           <div className="About_content_item_text">
             <h2>Project 2</h2>

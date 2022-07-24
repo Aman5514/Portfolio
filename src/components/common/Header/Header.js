@@ -10,7 +10,9 @@ const Header = () => {
   return (
     <>
       <div className="header_container">
-        <div className="header_logo">Personal.</div>
+        <div className="header_logo">
+          Personal <span className="dot">.</span>
+        </div>
         <div className="header_menu">
           {/* <input
             className="menu-btn"
@@ -58,7 +60,7 @@ const Header = () => {
       </div>
       <div
         style={{
-          transform: !checked && "translateY(-200%)",
+          transform: !checked && "translateX(-200%)",
         }}
         className={"header_line"}
       >

@@ -18,6 +18,22 @@
     .header_logo {
         font-size: 28px;
         letter-spacing: 2px;
+        .dot
+        {
+            color: cyan;
+            font-size: 30px;
+            animation: dot 2s linear infinite;
+            @keyframes dot {
+                0%
+                {
+                    filter: hue-rotate(0deg);
+                }
+                100%
+                {
+                    filter: hue-rotate(360deg);
+                }
+            }
+        }
     }
 
     .header_menu {
@@ -32,74 +48,11 @@
             clear: both;
             max-height: 0;
             transition: max-height .2s ease-out;
-          }
-          
-        //   /* menu icon */
-          
-        //    .menu-icon {
-        //     cursor: pointer;
-        //     display: inline-block;
-        //     padding: 20px;
-        //     position: relative;
-        //     user-select: none;
-        //   }
-          
-        //    .menu-icon .navicon {
-        //     background: #333;
-        //     display: block;
-        //     height: 3px;
-        //     position: relative;
-        //     transition: background .2s ease-out;
-        //     width: 30px;
-        //   }
-          
-        //    .menu-icon .navicon:before,
-        //    .menu-icon .navicon:after {
-        //     background: #333;
-        //     content: '';
-        //     display: block;
-        //     height: 100%;
-        //     position: absolute;
-        //     transition: all .2s ease-out;
-        //     width: 100%;
-        //   }
-          
-        //   .menu-icon .navicon:before {
-        //     top: 9px;
-        //   }
-          
-        //  .menu-icon .navicon:after {
-        //     top: -9px;
-        //   }
-
+        }
 
         .menu-icon {
             display: none;
         }
-
-        // .menu-btn:checked~.menu {
-        //     max-height: 240px;
-        // }
-
-        // .menu-btn:checked~.menu-icon .navicon {
-        //     background: transparent;
-        // }
-
-        // .menu-btn:checked~.menu-icon .navicon:before {
-        //     transform: rotate(-45deg);
-        // }
-
-        // .menu-btn:checked~.menu-icon .navicon:after {
-        //     transform: rotate(45deg);
-        // }
-
-        // .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
-        // .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
-        //     top: 0;
-        // }
-
-
-
         .navbar {
             height: 100%;
             display: flex;
@@ -160,8 +113,8 @@
     -webkit-backdrop-filter: blur(10px) saturate(180%);
     background-color: rgba(255, 255, 255, 0.55);
     z-index: 6;
-    transition: 1s;
-    height: 100%;
+    transition: 0.5s;
+    height: 50%;
     .navbar {
         height: 100%;
         display: flex;

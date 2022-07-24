@@ -159,12 +159,30 @@
 
 @media (max-width: 450px) {
     .workPage_container {
+        .inner_container {
+            .skills_container {
+                p {
+                    font-size: 14px;
+                    b{
+                        font-size: 16px;
+                    }
+                }
+            }
+            .experience_container {
+                .experience_item {
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
 
         .brand_icons_container {
             .brand_icons {
+                gap: 50px;
                 .icon {
-                    width: 65px;
-                    height: 65px    ;
+                    width: 55px;
+                    height: 55px    ;
                 }
             }
         }
