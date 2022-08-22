@@ -5,7 +5,7 @@ import { RiMenu3Fill } from "react-icons/ri";
 import { Link } from "react-scroll";
 
 const Header = () => {
-  const menu = ["Home", "Works", "Projects", "Sevices"];
+  const menu = ["Home", "Skills", "Projects", "Sevices"];
   const [checked, setChecked] = useState(false);
   return (
     <>

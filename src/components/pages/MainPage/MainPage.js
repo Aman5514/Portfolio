@@ -12,15 +12,15 @@ import { Link } from "react-scroll";
 
 const steps = [
   "Developer",
-  5000,
+  3000,
   "UI/UX Designer",
-  5000,
+  3000,
   "React Developer",
-  5000,
+  3000,
   "React Native Developer",
-  5000,
+  3000,
   "Nodejs Developer",
-  5000,
+  3000,
 ];
 
 const MainPage = () => {

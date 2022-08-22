@@ -40,7 +40,6 @@
 
         .button_container {
             display: flex;
-            align-items: center;
             gap: 15px;
             margin-top: 25px;
 
@@ -148,7 +147,7 @@
 
 @media (max-width: 450px) {
     .MainPage_container {
-        padding: 50px 0px;
+        padding: 45px 0px;
 
         .right_side_container {
             .image_container {
@@ -159,6 +158,14 @@
 
         .left_side_container {
             padding: 35px 0px;
+            .button_container{
+                flex-direction: column;
+                width: 75%;
+                .plain_button{
+                    justify-content: center;
+                    padding: 10px 24px;
+                }
+            }
             div{
                 p{
                     font-size: 28px;

@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  FaAws,
   FaCcStripe,
   FaGithub,
   FaNodeJs,
@@ -24,11 +23,14 @@ import {
   SiReduxsaga,
   SiStyledcomponents,
   SiTailwindcss,
+  SiRazorpay,
+  SiFigma,
+  SiTypescript,
 } from "react-icons/si";
 import "./WorkPage.scss";
 const WorkPage = () => {
   return (
-    <div className="workPage_container" id="Works">
+    <div className="workPage_container" id="Skills">
       <div className="inner_container">
         <div className="skills_container">
           <h1>Skill &</h1>
@@ -45,7 +47,7 @@ const WorkPage = () => {
           </p>
         </div>
         <div className="experience_container">
-          <h3>Experties</h3>
+          <h2>Experties</h2>
           <div className="experience_item">
             <p>
               React.js/Redux to build Interface , strong knowledge of state
@@ -66,6 +68,7 @@ const WorkPage = () => {
           </div>
         </div>
       </div>
+      <h1 style={{marginTop:30}}>Hands - on - Technologies </h1>
       <div className="brand_icons_container">
         <div className="brand_icons">
           <SiMongodb className="icon" />
@@ -73,7 +76,6 @@ const WorkPage = () => {
           <SiRedux className="icon" />
           <SiReduxsaga className="icon"/>
           <SiFirebase className="icon" />
-          <FaAws className="icon" />
           <FaGithub className="icon" />
           <FaNodeJs className="icon" />
           <SiHtml5 className="icon" />
@@ -87,6 +89,9 @@ const WorkPage = () => {
           <SiTailwindcss className="icon" />
           <SiMaterialui className="icon" />
           <TbBrandReactNative className="icon" />
+          <SiRazorpay className="icon" />
+          <SiFigma className="icon" />
+          <SiTypescript className="icon" />
           <SiExpo className="icon" />
           <SiExpress className="icon" />
           <SiLodash className="icon" />
@@ -95,7 +100,6 @@ const WorkPage = () => {
           <SiRedux className="icon" />
           <SiReduxsaga className="icon" />
           <SiFirebase className="icon" />
-          <FaAws className="icon" />
           <FaGithub className="icon" />
           <FaNodeJs className="icon" />
           <SiHtml5 className="icon" />
@@ -109,6 +113,9 @@ const WorkPage = () => {
           <SiTailwindcss className="icon" />
           <SiMaterialui className="icon" />
           <TbBrandReactNative className="icon" />
+          <SiRazorpay className="icon" />
+          <SiFigma className="icon" />
+          <SiTypescript className="icon" />
           <SiExpo className="icon" />
           <SiExpress className="icon" />
           <SiLodash className="icon" />
@@ -117,7 +124,6 @@ const WorkPage = () => {
           <SiRedux className="icon" />
           <SiReduxsaga className="icon"/>
           <SiFirebase className="icon" />
-          <FaAws className="icon" />
           <FaGithub className="icon" />
           <FaNodeJs className="icon" />
           <SiHtml5 className="icon" />
@@ -131,6 +137,9 @@ const WorkPage = () => {
           <SiTailwindcss className="icon" />
           <SiMaterialui className="icon" />
           <TbBrandReactNative className="icon" />
+          <SiRazorpay className="icon" />
+          <SiFigma className="icon" />
+          <SiTypescript className="icon" />
           <SiExpo className="icon" />
           <SiExpress className="icon" />
           <SiLodash className="icon" />
