@@ -12,7 +12,7 @@ const App = () => {
       <MainPage />
       <WorkPage />
       <ProjectPage />
-      <ServicePage/>
+      {/* <ServicePage/> */}
     </>
   );
 };
