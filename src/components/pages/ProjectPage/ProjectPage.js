@@ -4,16 +4,35 @@ import projectOne from "../../assets/image/92_w6J.gif";
 import { FaReact, FaLink } from "react-icons/fa";
 import { SiRedux, SiFirebase } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
+import Lottie from "react-lottie";
+import * as animation from "../../assets/animations/72235-watch-a-movie-with-popcorn.json";
 import Moviflix from "../../assets/image/moviflixQR.png";
 
 const ProjectPage = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animation.default,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
     <div className="About_container" id="Projects">
       <h1>Projects</h1>
       <div className="About_content">
         <div className="About_content_item">
           <div className="About_content_image">
-            <img src={projectOne} alt="" srcset="" />
+            {/* <img src={projectOne} alt="" srcset="" /> */}
+            <Lottie
+              options={defaultOptions}
+              // style={{
+              //   height: 400,
+              //   width: 400,
+              // }}
+              className="animation"
+            />
           </div>
           <div className="About_content_item_text">
             <h2>MOVIFLIX</h2>
@@ -40,7 +59,7 @@ const ProjectPage = () => {
             <p>Scan QR for check in another device</p>
           </div>
         </div>
-        <div className="About_content_item">
+        {/* <div className="About_content_item">
           <div className="About_content_image">
             <img
               src="https://images.unsplash.com/photo-1560707303-4e980ce876ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
@@ -95,7 +114,7 @@ const ProjectPage = () => {
               fugiat nemo.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
