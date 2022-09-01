@@ -1,18 +1,22 @@
 import React from "react";
 import "./ProjectPage.scss";
 import projectOne from "../../assets/image/92_w6J.gif";
-import { FaReact, FaLink } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { TbExternalLink , TbBrandReactNative} from "react-icons/tb";
+import { TiWeatherStormy } from "react-icons/ti";
 import { SiRedux, SiFirebase } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import Lottie from "react-lottie";
-import * as animation from "../../assets/animations/72235-watch-a-movie-with-popcorn.json";
+import MovieAnimation from "../../assets/animations/72235-watch-a-movie-with-popcorn.json";
+import WeatherAnimation from "../../assets/animations/67989-wind-and-rain.json";
 import Moviflix from "../../assets/image/moviflixQR.png";
+import { Button } from "@mui/material";
 
 const ProjectPage = () => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: animation.default,
+    animationData: MovieAnimation,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
@@ -26,15 +30,72 @@ const ProjectPage = () => {
           <div className="About_content_image">
             {/* <img src={projectOne} alt="" srcset="" /> */}
             <Lottie
-              options={defaultOptions}
-              // style={{
-              //   height: 400,
-              //   width: 400,
-              // }}
+              // options={defaultOptions}
+              options={{
+                loop: true,
+                autoplay: true,
+                rendererSettings: {
+                  preserveAspectRatio: "xMidYMid slice",
+                },
+                animationData: WeatherAnimation,
+              }}
               className="animation"
             />
           </div>
           <div className="About_content_item_text">
+            {/* <a
+              style={{
+                position: "absolute",
+                right: 0,
+              }}
+              href="https://disney-plus-movies.web.app"
+              target="blank"
+            >
+              <TbExternalLink color="black" size={25} />
+            </a> */}
+            <h2>Weather +</h2>
+            <p>
+              Its so easy to receive the weather conditions in your current
+              location. Weather forecast app provides detailed local forecast &
+              weather forecast world wide, the app provides the current
+              temperature in Celsius. The weather app also provides
+              atmospheric pressure, weather conditions, visibility distance,
+              relative humidity, precipitation in different unites, dew point,
+              wind speed and direction, in addition to ten days in future and
+              hourly weather forecast. Realtime temperature, humidity, pressure
+              and wind speed are all in the weather app based.
+            </p>
+            <div className="technology">
+              <b>Technology</b>{" "}
+              <div>
+                <TbBrandReactNative className="technology_icon" color="#49a3fb" />{" "}
+                <TbApi className="technology_icon" />
+                <TiWeatherStormy className="technology_icon" />
+              </div>
+            </div>
+            <div className="project_link">
+              <Button variant="contained" disabled >Download Apk</Button>
+                 {/* <img src={Moviflix} alt="" /> */}
+            </div>
+            {/* <p>Scan QR for check in another device</p> */}
+          </div>
+        </div>
+        <div className="About_content_item">
+          <div className="About_content_image">
+            {/* <img src={projectOne} alt="" srcset="" /> */}
+            <Lottie options={defaultOptions} className="animation" />
+          </div>
+          <div className="About_content_item_text">
+            <a
+              style={{
+                position: "absolute",
+                right: 0,
+              }}
+              href="https://disney-plus-movies.web.app"
+              target="blank"
+            >
+              <TbExternalLink color="black" size={25} />
+            </a>
             <h2>MOVIFLIX</h2>
             <p>
               Moviflix is an online database of information related to films,
@@ -53,12 +114,11 @@ const ProjectPage = () => {
             </div>
             <div className="project_link">
               <img src={Moviflix} alt="" />
-              {/* <b>Or</b>
-              <a href="https://disney-plus-movies.web.app" target="blank" >Moviflix Link <FaLink/> </a> */}
             </div>
             <p>Scan QR for check in another device</p>
           </div>
         </div>
+
         {/* <div className="About_content_item">
           <div className="About_content_image">
             <img
