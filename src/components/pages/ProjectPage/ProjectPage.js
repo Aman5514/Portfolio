@@ -165,14 +165,14 @@ const ProjectPage = () => {
               television series, home videos, video games, and streaming content
               online – including cast, production crew and personal biographies,
               plot summaries, trivia, ratings, and fan and critical reviews. and also you can watch all movie trailers,
-              search specific movies. Now no need to search whole movies collection just select movie type and search accordingly.
+              search specific movies. now no need to search whole movies collection just select movie type and search accordingly.
             </p>
             <div className="technology">
               <b>Technology</b>{" "}
               <div>
                 <TbBrandReactNative className="technology_icon" color="#49a3fb" />
                 <TbApi className="technology_icon" />
-                <FiYoutube className="technology_icon" color="darkred" />
+                <FiYoutube className="technology_icon" color="red" />
               </div>
             </div>
             <div className="project_link">

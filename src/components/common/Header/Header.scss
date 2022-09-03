@@ -1,5 +1,5 @@
 .header_container {
-    height: 80px;
+    height: 65px;
     width: 100%;
     font-weight: bold;
     display: flex;
@@ -160,7 +160,6 @@
 
 @media (max-width: 450px) {
     .header_container{
-        height: 65px;
         .header_logo{
             font-size: 24px;
         }

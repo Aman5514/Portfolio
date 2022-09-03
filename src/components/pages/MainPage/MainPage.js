@@ -52,6 +52,10 @@ const MainPage = () => {
         <br />
         <p>Designing user interfaces over 2 years</p>
         <p>as a product designer</p>
+        <br />
+        <p>Currently working in</p>
+        <p><b>I-PANGRAM DIGITAL SERVICES LLP</b></p>
+        <p>as a <b>FULL STACK DEVELOPER</b></p>
         <div className="button_container">
           <button className="color_button" onClick={handleClickOpen}>
             Hire Me
@@ -101,13 +105,10 @@ const MainPage = () => {
         </div>
       </div>
       <Dialog open={open}>
-        <DialogTitle>Notify Your's Developer ✨</DialogTitle>
+        <DialogTitle>Notify Me ✨</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            Please fill the form below to notify me and I will get back to you
-            as soon as possible.
-            <br />
-            Thank you!
+            I will get back to you as soon as possible.
           </DialogContentText>
           <div
             style={{
@@ -120,6 +121,7 @@ const MainPage = () => {
               id="name"
               label="Email"
               type="email"
+              size="small"
               fullWidth
               variant="outlined"
             />
@@ -130,16 +132,17 @@ const MainPage = () => {
               label="About Your's Expectation"
               type="email"
               fullWidth
+              size="small"
               variant="outlined"
               AiOutlineSend
               multiline
-              rows={4}
+              rows={2.8}
             />
           </div>
         </DialogContent>
         <DialogActions
           style={{
-            margin: "0px 20px 10px",
+            margin: "0px 20px 5px",
           }}
         >
           <Button
@@ -158,8 +161,8 @@ const MainPage = () => {
               textTransform: "capitalize",
             }}
             variant="contained"
+            onClick={handleClose}
             size="small"
-            endIcon={<AiOutlineSend />}
           >
             Send
           </Button>

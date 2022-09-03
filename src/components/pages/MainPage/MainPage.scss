@@ -1,5 +1,5 @@
 .MainPage_container {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 65px);
     display: flex;
     flex: 1;
     padding: 0 5%;
@@ -101,6 +101,13 @@
             }
         }
     }
+}
+.MuiTypography-root{
+    padding-top: 12px!important;
+    padding-bottom: 0px!important;
+}
+.MuiDialogContent-root{
+    padding-bottom: 0px !important;
 }
 
 .icon_rotate_animation {

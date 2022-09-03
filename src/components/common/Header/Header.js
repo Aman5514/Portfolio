@@ -5,7 +5,7 @@ import { RiMenu3Fill } from "react-icons/ri";
 import { Link } from "react-scroll";
 
 const Header = () => {
-  const menu = ["Home", "Skills", "Projects", "Sevices"];
+  const menu = ["Home", "Skills", "Projects"];
   const [checked, setChecked] = useState(false);
   return (
     <>
@@ -45,7 +45,7 @@ const Header = () => {
                 to={item}
                 smooth={true}
                 duration={800}
-                offset={-80}
+                offset={-65}
                 spy={true}
               >
                 {item}
