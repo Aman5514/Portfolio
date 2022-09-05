@@ -52,10 +52,9 @@ const MainPage = () => {
         <br />
         <p>Designing user interfaces over 2 years</p>
         <p>as a product designer</p>
-        <br />
-        <p>Currently working in</p>
-        <p><b>I-PANGRAM DIGITAL SERVICES LLP</b></p>
-        <p>as a <b>FULL STACK DEVELOPER</b></p>
+        <p>working in</p>
+        <p>I-PANGRAM DIGITAL SERVICES LLP</p>
+        <p>FULL STACK DEVELOPER</p>
         <div className="button_container">
           <button className="color_button" onClick={handleClickOpen}>
             Hire Me
